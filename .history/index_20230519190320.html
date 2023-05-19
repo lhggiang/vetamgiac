@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str1 = "";
+        for (let j = 1; j <= 5; j++) {
+            str1 += "*"
+            document.write(`${str1} <br>`);
+        };
+
+        document.write("<br>");
+
+        // for (let i = 5; i >= 1; i--) {
+        //     str2 = "*****"
+        //     let ict = str2.slice(-i);
+        //     document.write(`${ict} <br>`);
+        // };
+
+        let str2 = ""
+        for (let i = 5; i >= 1; i--) {
+            for (j = 1; j <= i; j++) {
+                str2 += "*"
+            }
+            str2 += "<br/>"
+        }
+        document.write(str2 + "<br/>");
+
+        let str3 = ""
+        for (let i = 5; i >= 1; i--) {
+            for (let j = 1; j <= i; j++) {
+                str3 += "&nbsp;&nbsp;"
+            }
+            for (let q = 5; q >= i; q--) {
+                str3 += "*"
+            }
+            str3 += "<br/>"
+        }
+        document.write(str3 + "<br/>");
+
+        let str4 = ""
+        for (let i = 5; i >= 1; i--) {
+            for (let j = 5; j >= i; j--) {
+                str4 += "&nbsp;&nbsp;"
+            }
+            for (let q = 1; q <= i; q++) {
+                str4 += "*"
+            }
+            str4 += "<br/>"
+        }
+        document.write(str4 + "<br/>");
+    </script>
+</body>
+
+</html>
